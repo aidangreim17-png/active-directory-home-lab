@@ -30,6 +30,8 @@ This document outlines the deployment and initial configuration of an Ubuntu Ser
 | Installation Media     | Ubuntu Server ISO |
 | Network Bridge         | vmbr0             |
 
+![Ubuntu VM Summary](../screenshots/ubuntu/vm-summary.png)
+
 ---
 
 # Virtual Machine Configuration
@@ -44,7 +46,11 @@ This document outlines the deployment and initial configuration of an Ubuntu Ser
 | Network Adapter | VirtIO                              |
 | Bridge          | vmbr0                               |
 
+![Ubuntu VM Hardware](../screenshots/ubuntu/vm-hardware.png)
+
 ---
+
+
 
 # Creating the Virtual Machine
 
@@ -79,6 +85,8 @@ Configuration used during installation:
 | OpenSSH Server        | Installed                           |
 
 After the installation completed, the virtual machine rebooted into the newly installed operating system.
+
+![First Login](../screenshots/ubuntu/first-login.png)
 
 ---
 
@@ -136,6 +144,7 @@ Verify DNS resolution:
 ping google.com
 ```
 
+![Network Configuration](../screenshots/ubuntu/network-config.png)
 ---
 
 # SSH Configuration
@@ -160,6 +169,7 @@ Connect remotely from another computer:
 ssh aidan@192.168.50.101
 ```
 
+![SSH Status](../screenshots/ubuntu/ssh-status.png)
 ---
 
 # Validation
