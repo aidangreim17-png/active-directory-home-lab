@@ -26,6 +26,9 @@ This project established the virtualization platform used to host the enterprise
 | Storage              | local / local-lvm    |
 | Virtual Networking   | Linux Bridge (vmbr0) |
 
+![Proxmox Dashboard](../screenshots/proxmox/proxmox-dashboard.png)
+
+
 ---
 
 # Hardware
@@ -54,10 +57,14 @@ vmbr0
 │        │        │         │
 pfSense Ubuntu   DC01   CLIENT01
 ```
+![Network Configuration](../screenshots/proxmox/network-configuration.png)
 
 ---
 
 # Virtual Machines
+
+![Virtual Machines](../screenshots/proxmox/vm-list.png)
+
 
 ## pfSense
 
@@ -119,6 +126,9 @@ Configured virtual disks using:
 
 Snapshots were created before major configuration changes to provide rollback capability.
 
+![Local Storage](../screenshots/proxmox/local-storage.png)
+
+![Local LVM Storage](../screenshots/proxmox/local-lvm-storage.png)
 ---
 
 # Virtual Networking
