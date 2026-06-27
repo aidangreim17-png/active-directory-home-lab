@@ -110,7 +110,9 @@ Built a Windows Server 2022 Active Directory lab to simulate a small business en
 
 ### Active Directory Users and Computers
 
-![AD Users](screenshots/ad-users.png)
+![AD Users](screenshots/ad-users/HR.png)
+![AD Users](screenshots/ad-users/IT.png)
+![AD Users](screenshots/ad-users/Sales.png)
 
 ### DHCP Scope
 
