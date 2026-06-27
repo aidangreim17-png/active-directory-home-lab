@@ -32,9 +32,9 @@ This project established the virtualization platform used to host the enterprise
 
 | Component | Specification      |
 | --------- | ------------------ |
-| CPU       | *Intel Core i5-8500*   |
-| Memory    | *16 GB*    |
-| Storage   | *500 GB* |
+| CPU       | Intel Core i5-8500   |
+| Memory    | 16 GB    |
+| Storage   | 500 GB |
 | Network   | 10 Gigabit Ethernet   |
 
 ---
