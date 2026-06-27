@@ -72,10 +72,10 @@ Configuration used during installation:
 | Language              | English                             |
 | Keyboard Layout       | English (US)                        |
 | Installation Type     | Ubuntu Server                       |
-| Network Configuration | DHCP *(or Static IP if applicable)* |
+| Network Configuration | DHCP                                |
 | Storage Layout        | Guided Storage                      |
 | Hostname              | ubuntu-server                       |
-| Administrative User   | *(Your username)*                   |
+| Administrative User   | *aidan*                             |
 | OpenSSH Server        | Installed                           |
 
 After the installation completed, the virtual machine rebooted into the newly installed operating system.
