@@ -56,22 +56,22 @@ Windows 11 Pro was installed for educational and homelab purposes.
 
 # Creating the Virtual Machine
 
-1. Log into the Proxmox web interface.
-2. Select the Proxmox node.
-3. Click **Create VM**.
-4. Assign the virtual machine name.
-5. Select the Windows 11 ISO.
-6. Attach the VirtIO Driver ISO.
-7. Configure CPU, memory, and storage.
-8. Configure the network adapter.
-9. Enable TPM 2.0 and UEFI.
-10. Review the configuration and create the VM.
+1. Logged onto the Proxmox web interface.
+2. Selected the Proxmox node.
+3. Clicked **Create VM**.
+4. Assigned the virtual machine name.
+5. Selected the Windows 11 ISO.
+6. Attached the VirtIO Driver ISO.
+7. Configured CPU, memory, and storage.
+8. Configured the network adapter.
+9. Enabled TPM 2.0 and UEFI.
+10. Reviewed the configuration and created the VM.
 
 ---
 
 # Installing Windows 11
 
-Power on the virtual machine and launch the Windows installation.
+Powered on the virtual machine and launched the Windows installation.
 
 Configuration used during installation:
 
@@ -95,58 +95,58 @@ During installation:
 
 During the Windows installation, the built-in hardware checks were bypassed to allow installation in the virtual environment.
 
-1. Press **Shift + F10** to open Command Prompt.
-2. Launch the Registry Editor:
+1. Pressed **Shift + F10** to open Command Prompt.
+2. Launched the Registry Editor:
 
    regedit
 
-3. Navigate to:
+3. Navigated to:
 
    HKEY_LOCAL_MACHINE\SYSTEM\Setup
 
-4. Create a new key named:
+4. Created a new key named:
 
    LabConfig
 
-5. Create the following DWORD (32-bit) values and set each to **1**:
+5. Created the following DWORD (32-bit) values and set each to **1**:
 
    - BypassTPMCheck
    - BypassSecureBootCheck
    - BypassRAMCheck
 
-6. Close Registry Editor and continue the Windows installation.
+6. Closed Registry Editor and continue the Windows installation.
 
 
 # Installing VirtIO Drivers
 
 After Windows installation:
 
-1. Mount the VirtIO Driver ISO.
-2. Install the required drivers:
+1. Mounted the VirtIO Driver ISO.
+2. Installed the required drivers:
 
    * Storage
    * Network
    * Balloon
    * Guest Tools (if installed)
-3. Restart the virtual machine.
+3. Restarted the virtual machine.
 
 ---
 
 # Network Configuration
 
-Verify the assigned IP address:
+Verified the assigned IP address:
 
 ```powershell
 ipconfig
 ```
 
-Verify Internet connectivity:
+Verified Internet connectivity:
 
 ```powershell
 ping 8.8.8.8
 ```
 
-Verify DNS resolution:
+Verified DNS resolution:
 
 ```powershell
 ping google.com
@@ -156,11 +156,11 @@ ping google.com
 
 # Windows Updates
 
-Open:
+Opened:
 
 **Settings → Windows Update**
 
-Install all available updates until the system reports it is fully up to date.
+Installed all available updates until the system reports it is fully up to date.
 
 ---
 
@@ -201,13 +201,13 @@ VirtIO storage driver not loaded.
 
 Resolution:
 
-Load the appropriate VirtIO storage driver during Windows installation.
+Loaded the appropriate VirtIO storage driver during Windows installation.
 
 ---
 
 ## No Network Connectivity
 
-Verify:
+Verified:
 
 * VirtIO network driver is installed.
 * Correct bridge is selected in Proxmox.
